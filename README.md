@@ -38,7 +38,7 @@ Sustav funkcionira kao state machine:
 - Žuta ili crvena LED se gase
 
 ## Wokwi simulacija
-[OVDJE ZALIJEPI LINK SA SIMULACIJE]
+https://wokwi.com/projects/459301226887615489
 
 ## Doxygen dokumentacija
 Dokumentacija koda generirana pomoću Doxygen alata nalazi se u direktoriju `docs/html`.  
