@@ -47,3 +47,21 @@ https://wokwi.com/projects/459301226887615489
 ## Zaključak
 
 Sustav demonstrira pravilnu implementaciju višestrukih prekida i njihovu prioritizaciju u ugradbenim sustavima.
+
+## Control Flow Graph (CFG)
+
+```mermaid
+graph TD
+    A[Start loop] --> B[Check HIGH interrupt]
+    B -->|Yes| C[Set ALARM]
+    B -->|No| D[Check RESET]
+    D -->|Yes| E[Set NORMAL]
+    D -->|No| F[Check sensor]
+    F -->|Close object| G[Set WARNING]
+    F -->|Far| H[Set NORMAL]
+    G --> I[Update LEDs]
+    H --> I
+    C --> I
+    E --> I
+```
+
