@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Bosnjak",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp32", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_green", "top": -100, "left": 0, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led_yellow", "top": -100, "left": 40, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "led_red", "top": -100, "left": 80, "attrs": { "color": "red" } },
+    { "type": "wokwi-pushbutton", "id": "btn_high", "top": -100, "left": 160, "attrs": { "color": "green" } },
+    { "type": "wokwi-pushbutton", "id": "btn_reset", "top": -100, "left": 220, "attrs": { "color": "red" } },
+    { "type": "wokwi-hc-sr04", "id": "hcsr04", "top": -180, "left": 100, "attrs": { "distance": "50" } }
+  ],
+  "connections": [
+    [ "esp32:GND", "led_green:C", "black", [] ],
+    [ "esp32:2", "led_green:A", "green", [] ],
+    [ "esp32:GND", "led_yellow:C", "black", [] ],
+    [ "esp32:15", "led_yellow:A", "yellow", [] ],
+    [ "esp32:GND", "led_red:C", "black", [] ],
+    [ "esp32:18", "led_red:A", "red", [] ],
+    [ "esp32:4", "btn_high:1.l", "green", [] ],
+    [ "esp32:GND", "btn_high:2.l", "black", [] ],
+    [ "esp32:5", "btn_reset:1.l", "green", [] ],
+    [ "esp32:GND", "btn_reset:2.l", "black", [] ],
+    [ "esp32:12", "hcsr04:TRIG", "green", [] ],
+    [ "esp32:14", "hcsr04:ECHO", "yellow", [] ],
+    [ "esp32:GND", "hcsr04:GND", "black", [] ],
+    [ "esp32:3V3", "hcsr04:VCC", "red", [] ]
+  ],
+  "dependencies": {}
+}
