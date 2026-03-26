@@ -1,0 +1,38 @@
+var sketch_8ino =
+[
+    [ "BUTTON_HIGH", "da/d98/sketch_8ino.html#add428a5e9c9ccb58ad6c4abd88373b67", null ],
+    [ "BUTTON_RESET", "da/d98/sketch_8ino.html#a0710f0869f3bcc7820964e85f3d59fa4", null ],
+    [ "DEBOUNCE_MS", "da/d98/sketch_8ino.html#add56dedbc09f82766e39588e01978e7d", null ],
+    [ "DIST_ALARM", "da/d98/sketch_8ino.html#afd7024600a2108a8fa63a83a56543ddd", null ],
+    [ "DIST_WARNING", "da/d98/sketch_8ino.html#adb4a78ea3ad77361f7be3912d33ba5d1", null ],
+    [ "ECHO_PIN", "da/d98/sketch_8ino.html#acea96cea4a13b6cb38e57a86788adf90", null ],
+    [ "LED_GREEN", "da/d98/sketch_8ino.html#aca338dbd19d7940923334629f6e5f3b7", null ],
+    [ "LED_RED", "da/d98/sketch_8ino.html#a31e20330f8ce94e0dd10b005a15c5898", null ],
+    [ "LED_YELLOW", "da/d98/sketch_8ino.html#ae3c73853c6d0a1eca2c7d9797f6494ea", null ],
+    [ "SENSOR_INTERVAL", "da/d98/sketch_8ino.html#a71a7a65f7dd7e8f3ea14942213cd8217", null ],
+    [ "TIMER_INTERVAL", "da/d98/sketch_8ino.html#a2e2bf358c53c278fdff9b5bfba4efd66", null ],
+    [ "TRIG_PIN", "da/d98/sketch_8ino.html#a8eab89acd7dcb0e77e7b00d1749022a6", null ],
+    [ "State", "da/d98/sketch_8ino.html#a5d74787dedbc4e11c1ab15bf487e61f8", [
+      [ "NORMAL", "da/d98/sketch_8ino.html#a5d74787dedbc4e11c1ab15bf487e61f8a50d1448013c6f17125caee18aa418af7", null ],
+      [ "WARNING", "da/d98/sketch_8ino.html#a5d74787dedbc4e11c1ab15bf487e61f8a984de77c680eaff141ec910e25568a81", null ],
+      [ "ALARM", "da/d98/sketch_8ino.html#a5d74787dedbc4e11c1ab15bf487e61f8ac4212312865bd8ac6810b9651d9e80df", null ]
+    ] ],
+    [ "handleInterrupts", "da/d98/sketch_8ino.html#ac5c5aa6ac9677fce5ac2020e921bd47b", null ],
+    [ "isrButtonHigh", "da/d98/sketch_8ino.html#a081afc79c40d483f2124ebee42f4e345", null ],
+    [ "isrButtonReset", "da/d98/sketch_8ino.html#ab6c6045c14f1ca2dd7dcbf93ec25b5a5", null ],
+    [ "loop", "da/d98/sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f", null ],
+    [ "readDistance", "da/d98/sketch_8ino.html#a69d510fb986ae8fef84b3dbb732e799e", null ],
+    [ "setup", "da/d98/sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d", null ],
+    [ "timerISR", "da/d98/sketch_8ino.html#a34f25ac42d32ac64ac88666235c27f37", null ],
+    [ "updateLEDs", "da/d98/sketch_8ino.html#a3c7b93186aa45d9ff5d239f0d88f6008", null ],
+    [ "currentState", "da/d98/sketch_8ino.html#a141eba680f1511bcbfa539087855dea4", null ],
+    [ "highFlag", "da/d98/sketch_8ino.html#ae93004ff527434835723143d2cb3da0a", null ],
+    [ "lastHighPress", "da/d98/sketch_8ino.html#a1188b7df088d253bb79a6419654cdf28", null ],
+    [ "lastResetPress", "da/d98/sketch_8ino.html#a5042d87995fc440bc8a7d3636a923718", null ],
+    [ "lastSensor", "da/d98/sketch_8ino.html#addfadff939bae24c3eda68ec67ef34f9", null ],
+    [ "mux", "da/d98/sketch_8ino.html#a7c46df5b748e33e1c886fc8f1d74abc0", null ],
+    [ "resetFlag", "da/d98/sketch_8ino.html#a5158c2fdfc98e40923e32730e08c5b4e", null ],
+    [ "timer0", "da/d98/sketch_8ino.html#a25ee574a82660d392759061e40e6afa6", null ],
+    [ "timerCount", "da/d98/sketch_8ino.html#a0f9a5705b40959e4f1490e6347240fc5", null ],
+    [ "timerFlag", "da/d98/sketch_8ino.html#a6aeef4801eda4cb5bc8aaecc65a58922", null ]
+];

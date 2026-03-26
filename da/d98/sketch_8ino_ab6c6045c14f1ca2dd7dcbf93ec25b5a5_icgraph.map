@@ -1,0 +1,4 @@
+<map id="isrButtonReset" name="isrButtonReset">
+<area shape="rect" id="node1" title="ISR za tipkalo BUTTON_RESET &#45; NISKI prioritet." alt="" coords="108,5,216,31"/>
+<area shape="rect" id="node2" href="$da/d98/sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicijalizacija sustava &#45; izvrsava se jednom pri pokretanju." alt="" coords="5,5,60,31"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="setup" name="setup">
+<area shape="rect" id="node1" title="Inicijalizacija sustava &#45; izvrsava se jednom pri pokretanju." alt="" coords="5,55,60,80"/>
+<area shape="rect" id="node2" href="$da/d98/sketch_8ino.html#a081afc79c40d483f2124ebee42f4e345" title="ISR za tipkalo BUTTON_HIGH &#45; VISOKI prioritet." alt="" coords="111,5,213,31"/>
+<area shape="rect" id="node3" href="$da/d98/sketch_8ino.html#ab6c6045c14f1ca2dd7dcbf93ec25b5a5" title="ISR za tipkalo BUTTON_RESET &#45; NISKI prioritet." alt="" coords="108,55,216,80"/>
+<area shape="rect" id="node4" href="$da/d98/sketch_8ino.html#a34f25ac42d32ac64ac88666235c27f37" title="ISR za Hardware Timer0 &#45; NAJVISI prioritet." alt="" coords="125,104,199,129"/>
+</map>
