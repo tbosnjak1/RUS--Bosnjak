@@ -1,0 +1,28 @@
+name: Doxygen dokumentacija
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Preuzmi repozitorij
+        uses: actions/checkout@v3
+
+      - name: Generiraj Doxygen dokumentaciju
+        uses: mattnotmitt/doxygen-action@v1.9.5
+        with:
+          doxyfile-path: Lab1/Doxyfile
+          working-directory: .
+
+      - name: Objavi na GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/html
