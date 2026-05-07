@@ -1,0 +1,4 @@
+<map id="activeFase" name="activeFase">
+<area shape="rect" id="node1" title="Aktivna faza &#45; izvršava se nakon buđenja." alt="" coords="108,5,195,31"/>
+<area shape="rect" id="node2" href="$dc/d3c/main_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Inicijalizacija &#45; izvršava se pri svakom buđenju iz Deep Sleepa." alt="" coords="5,5,60,31"/>
+</map>

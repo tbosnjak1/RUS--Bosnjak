@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updateleds_0',['updateLEDs',['../da/d98/sketch_8ino.html#a3c7b93186aa45d9ff5d239f0d88f6008',1,'sketch.ino']]]
+  ['setup_0',['setup',['../da/d98/sketch_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;sketch.ino'],['../dc/d3c/main_8ino.html#a4fc01d736fe50cf5b977f755b675f11d',1,'setup():&#160;main.ino']]]
 ];
