@@ -1,0 +1,46 @@
+=== RUS Lab2 - Pametni postanski sanducic ===
+Platform: ESP32 | Sleep mod: Deep Sleep | Budenje: EXT0 GPIO32
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[INIT] Pametni postanski sanducic
+[INIT] Sustav spreman.
+[INFO] Paketa do sada: 0
+[SLEEP] Ulazim u Deep Sleep...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+--- Tipkalo pritisnuto (paket 1) ---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[BUDENJE] Paket detektiran!
+[INFO] Ukupno paketa: 1
+[AKTIVAN] Obrada paketa... (3s)
+[GOTOVO] Obrada zavrsena.
+[SLEEP] Ulazim u Deep Sleep...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+--- Tipkalo pritisnuto brzo dva puta (test debounce) ---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[BUDENJE] Paket detektiran!
+[INFO] Ukupno paketa: 2
+[AKTIVAN] Obrada paketa... (3s)
+[GOTOVO] Obrada zavrsena.
+[SLEEP] Ulazim u Deep Sleep...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[DEBOUNCE] Ignoriran lazni signal!
+[SLEEP] Ulazim u Deep Sleep...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+--- Tipkalo pritisnuto (paket 3) ---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[BUDENJE] Paket detektiran!
+[INFO] Ukupno paketa: 3
+[AKTIVAN] Obrada paketa... (3s)
+[GOTOVO] Obrada zavrsena.
+[SLEEP] Ulazim u Deep Sleep...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== Kraj ispisa ===
+Napomena: Simulacija prikazuje logiku sleep/wake ciklusa.
+Stvarna potrosnja energije nije mjerljiva u Wokwi simulatoru.
