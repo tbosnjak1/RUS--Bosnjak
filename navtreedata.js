@@ -37,6 +37,13 @@ var NAVTREE =
       [ "Generiranje dokumentacije (Doxygen)", "index.html#autotoc_md16", null ],
       [ "Autor", "index.html#autotoc_md18", null ]
     ] ],
+    [ "RUS Lab2 — Pametni poštanski sandučić (Event-driven Deep Sleep)", "d8/d46/md_Lab2_Lab2.html", [
+      [ "</blockquote>", "d8/d46/md_Lab2_Lab2.html#autotoc_md20", null ],
+      [ "Kratki opis rješenja", "d8/d46/md_Lab2_Lab2.html#autotoc_md21", null ],
+      [ "Sažetak implementacije", "d8/d46/md_Lab2_Lab2.html#autotoc_md23", null ],
+      [ "Komponente", "d8/d46/md_Lab2_Lab2.html#autotoc_md25", null ],
+      [ "Napomena o simulaciji", "d8/d46/md_Lab2_Lab2.html#autotoc_md27", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
@@ -53,7 +60,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"da/d98/sketch_8ino.html"
+"d8/d46/md_Lab2_Lab2.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
