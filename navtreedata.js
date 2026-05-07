@@ -37,12 +37,24 @@ var NAVTREE =
       [ "Generiranje dokumentacije (Doxygen)", "index.html#autotoc_md16", null ],
       [ "Autor", "index.html#autotoc_md18", null ]
     ] ],
+    [ "Izvještaj — RUS Lab2: Pametni poštanski sandučić", "d5/d27/md_Lab2_docs_izvjestaj.html", [
+      [ "1. Opis implementacije", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md20", [
+        [ "Faze rada sustava:", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md21", null ]
+      ] ],
+      [ "2. Korišteni režim mirovanja", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md23", null ],
+      [ "3. Način buđenja", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md25", null ],
+      [ "4. Čuvanje stanja (RTC memorija)", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md27", null ],
+      [ "5. Debouncing", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md29", null ],
+      [ "6. Dijagram stanja", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md31", null ],
+      [ "7. Ograničenja simulacije", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md33", null ],
+      [ "8. Wokwi simulacija", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md35", null ]
+    ] ],
     [ "RUS Lab2 — Pametni poštanski sandučić (Event-driven Deep Sleep)", "d8/d46/md_Lab2_Lab2.html", [
-      [ "</blockquote>", "d8/d46/md_Lab2_Lab2.html#autotoc_md20", null ],
-      [ "Kratki opis rješenja", "d8/d46/md_Lab2_Lab2.html#autotoc_md21", null ],
-      [ "Sažetak implementacije", "d8/d46/md_Lab2_Lab2.html#autotoc_md23", null ],
-      [ "Komponente", "d8/d46/md_Lab2_Lab2.html#autotoc_md25", null ],
-      [ "Napomena o simulaciji", "d8/d46/md_Lab2_Lab2.html#autotoc_md27", null ]
+      [ "</blockquote>", "d8/d46/md_Lab2_Lab2.html#autotoc_md37", null ],
+      [ "Kratki opis rješenja", "d8/d46/md_Lab2_Lab2.html#autotoc_md38", null ],
+      [ "Sažetak implementacije", "d8/d46/md_Lab2_Lab2.html#autotoc_md40", null ],
+      [ "Komponente", "d8/d46/md_Lab2_Lab2.html#autotoc_md42", null ],
+      [ "Napomena o simulaciji", "d8/d46/md_Lab2_Lab2.html#autotoc_md44", null ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
@@ -60,7 +72,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"d8/d46/md_Lab2_Lab2.html"
+"d5/d27/md_Lab2_docs_izvjestaj.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
