@@ -8,11 +8,14 @@
  * Koristi RTC memoriju za čuvanje broja događaja kroz sleep cikluse.
  * Debouncing je implementiran vremenskim ignoriranjem ponovljenih prekida.
  *
- * @author Tbosnjak1
+ * @author Bosnjak
  * @date Svibanj 2025.
+ * @version 1.1
  */
 
 #include "esp_sleep.h"
+#include "WiFi.h"
+#include "esp_bt.h"
 
 #define BUTTON_PIN  32  ///< Pin tipkala za buđenje
 #define LED_PIN     2   ///< LED indikator aktivne faze
@@ -23,6 +26,9 @@ RTC_DATA_ATTR unsigned long lastWakeTime = 0; ///< Timestamp za debouncing
 
 /**
  * @brief Aktivna faza - izvršava se nakon buđenja.
+ *
+ * Evidentira novi paket, uključuje LED na 3 sekunde
+ * kao simulaciju obrade događaja, zatim gasi LED.
  */
 void activeFase() {
   packageCount++;
@@ -38,9 +44,26 @@ void activeFase() {
 }
 
 /**
+ * @brief Onemogućava nepotrebne periferije prije ulaska u sleep.
+ *
+ * Isključuje WiFi i Bluetooth kako bi se minimizirala
+ * potrošnja energije tijekom Deep Sleep faze.
+ */
+void disablePeripherals() {
+  WiFi.disconnect(true);
+  WiFi.mode(WIFI_OFF);
+  btStop();
+  Serial.println("[PERIFERIJE] WiFi i Bluetooth onemogućeni.");
+}
+
+/**
  * @brief Ulazak u Deep Sleep mod.
+ *
+ * Prije spavanja onemogućava periferije, konfigurira
+ * buđenje putem EXT0 prekida na BUTTON_PIN (LOW razina).
  */
 void enterSleep() {
+  disablePeripherals();
   Serial.println("[SLEEP] Ulazim u Deep Sleep...");
   Serial.println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
   Serial.flush();
@@ -50,6 +73,7 @@ void enterSleep() {
 
 /**
  * @brief Debounce provjera - vremensko ignoriranje ponovljenih prekida.
+ *
  * @return true ako je događaj valjan, false ako je šum
  */
 bool isValidWakeup() {
@@ -64,10 +88,14 @@ bool isValidWakeup() {
 
 /**
  * @brief Inicijalizacija - izvršava se pri svakom buđenju iz Deep Sleepa.
+ *
+ * ESP32 nakon Deep Sleepa ne nastavlja od mjesta gdje je stao
+ * nego izvršava setup() iznova. Stanje se čuva u RTC memoriji.
  */
 void setup() {
   Serial.begin(115200);
   delay(100);
+
   pinMode(LED_PIN,    OUTPUT);
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   digitalWrite(LED_PIN, LOW);
@@ -90,6 +118,11 @@ void setup() {
   enterSleep();
 }
 
+/**
+ * @brief Glavna petlja - nikad se ne izvršava.
+ *
+ * ESP32 u Deep Sleep modu uvijek restarta kroz setup().
+ */
 void loop() {
   // Nikad se ne izvršava - ESP32 ide u Deep Sleep iz setup()
 }
