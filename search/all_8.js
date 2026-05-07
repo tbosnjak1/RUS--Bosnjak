@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main_2eino_0',['main.ino',['../dc/d3c/main_8ino.html',1,'']]],
-  ['mux_1',['mux',['../da/d98/sketch_8ino.html#a7c46df5b748e33e1c886fc8f1d74abc0',1,'sketch.ino']]]
+  ['komponente_20i_20pinovi_0',['Komponente i pinovi',['../index.html#autotoc_md4',1,'']]],
+  ['kontrolni_20tok_20programa_20cfg_1',['Kontrolni tok programa (CFG)',['../index.html#autotoc_md10',1,'']]]
 ];

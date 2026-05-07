@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['activefase_0',['activeFase',['../dc/d3c/main_8ino.html#a6b4406198cb60d31335ed47c1164e681',1,'main.ino']]]
+  ['handleinterrupts_0',['handleInterrupts',['../da/d98/sketch_8ino.html#ac5c5aa6ac9677fce5ac2020e921bd47b',1,'sketch.ino']]]
 ];

@@ -1,6 +1,0 @@
-<map id="setup" name="setup">
-<area shape="rect" id="node1" title="Inicijalizacija &#45; izvršava se pri svakom buđenju iz Deep Sleepa." alt="" coords="5,55,60,80"/>
-<area shape="rect" id="node2" href="$dc/d3c/main_8ino.html#a6b4406198cb60d31335ed47c1164e681" title="Aktivna faza &#45; izvršava se nakon buđenja." alt="" coords="119,5,205,31"/>
-<area shape="rect" id="node3" href="$dc/d3c/main_8ino.html#ae5b5093bef9a291e112c49e9aae5feec" title="Ulazak u Deep Sleep mod." alt="" coords="120,55,204,80"/>
-<area shape="rect" id="node4" href="$dc/d3c/main_8ino.html#af11da7223b6a37bcef6a06e131afd1d5" title="Debounce provjera &#45; vremensko ignoriranje ponovljenih prekida." alt="" coords="108,104,216,129"/>
-</map>

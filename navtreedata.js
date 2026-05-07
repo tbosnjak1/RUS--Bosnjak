@@ -25,37 +25,7 @@
 var NAVTREE =
 [
   [ "RUS_Lab1_Bosnjak", "index.html", [
-    [ "RUS Lab1 — Upravljanje višestrukim prekidima na ESP32", "index.html", [
-      [ "</blockquote>", "index.html#autotoc_md1", null ],
-      [ "Opis zadatka", "index.html#autotoc_md2", null ],
-      [ "Komponente i pinovi", "index.html#autotoc_md4", null ],
-      [ "Hijerarhija prioriteta prekida", "index.html#autotoc_md6", null ],
-      [ "State Machine", "index.html#autotoc_md8", null ],
-      [ "Kontrolni tok programa (CFG)", "index.html#autotoc_md10", null ],
-      [ "Nested Interrupts na ESP32", "index.html#autotoc_md12", null ],
-      [ "Ispis Serial monitora (dokaz rada)", "index.html#autotoc_md14", null ],
-      [ "Generiranje dokumentacije (Doxygen)", "index.html#autotoc_md16", null ],
-      [ "Autor", "index.html#autotoc_md18", null ]
-    ] ],
-    [ "Izvještaj — RUS Lab2: Pametni poštanski sandučić", "d5/d27/md_Lab2_docs_izvjestaj.html", [
-      [ "1. Opis implementacije", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md20", [
-        [ "Faze rada sustava:", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md21", null ]
-      ] ],
-      [ "2. Korišteni režim mirovanja", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md23", null ],
-      [ "3. Način buđenja", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md25", null ],
-      [ "4. Čuvanje stanja (RTC memorija)", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md27", null ],
-      [ "5. Debouncing", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md29", null ],
-      [ "6. Dijagram stanja", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md31", null ],
-      [ "7. Ograničenja simulacije", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md33", null ],
-      [ "8. Wokwi simulacija", "d5/d27/md_Lab2_docs_izvjestaj.html#autotoc_md35", null ]
-    ] ],
-    [ "RUS Lab2 — Pametni poštanski sandučić (Event-driven Deep Sleep)", "d8/d46/md_Lab2_Lab2.html", [
-      [ "</blockquote>", "d8/d46/md_Lab2_Lab2.html#autotoc_md37", null ],
-      [ "Kratki opis rješenja", "d8/d46/md_Lab2_Lab2.html#autotoc_md38", null ],
-      [ "Sažetak implementacije", "d8/d46/md_Lab2_Lab2.html#autotoc_md40", null ],
-      [ "Komponente", "d8/d46/md_Lab2_Lab2.html#autotoc_md42", null ],
-      [ "Napomena o simulaciji", "d8/d46/md_Lab2_Lab2.html#autotoc_md44", null ]
-    ] ],
+    [ "RUS Lab1 — Upravljanje višestrukim prekidima na ESP32", "index.html", "index" ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
@@ -72,7 +42,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"d5/d27/md_Lab2_docs_izvjestaj.html"
+"da/d98/sketch_8ino.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

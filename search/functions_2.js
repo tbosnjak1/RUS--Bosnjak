@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['handleinterrupts_0',['handleInterrupts',['../da/d98/sketch_8ino.html#ac5c5aa6ac9677fce5ac2020e921bd47b',1,'sketch.ino']]]
+  ['loop_0',['loop',['../da/d98/sketch_8ino.html#afe461d27b9c48d5921c00d521181f12f',1,'sketch.ino']]]
 ];

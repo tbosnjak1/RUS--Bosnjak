@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['readdistance_0',['readDistance',['../da/d98/sketch_8ino.html#a69d510fb986ae8fef84b3dbb732e799e',1,'sketch.ino']]],
-  ['readme_2emd_1',['README.md',['../da/ddd/README_8md.html',1,'']]],
-  ['resetflag_2',['resetFlag',['../da/d98/sketch_8ino.html#a5158c2fdfc98e40923e32730e08c5b4e',1,'sketch.ino']]],
-  ['rus_20lab1_20—_20upravljanje_20višestrukim_20prekidima_20na_20esp32_3',['RUS Lab1 — Upravljanje višestrukim prekidima na ESP32',['../index.html',1,'']]],
-  ['rus_20lab2_20—_20pametni_20poštanski_20sandučić_20_28event_2ddriven_20deep_20sleep_29_4',['RUS Lab2 — Pametni poštanski sandučić (Event-driven Deep Sleep)',['../d8/d46/md_Lab2_Lab2.html',1,'']]]
+  ['na_20esp32_0',['na esp32',['../index.html#autotoc_md12',1,'Nested Interrupts na ESP32'],['../index.html',1,'RUS Lab1 — Upravljanje višestrukim prekidima na ESP32']]],
+  ['nested_20interrupts_20na_20esp32_1',['Nested Interrupts na ESP32',['../index.html#autotoc_md12',1,'']]],
+  ['normal_2',['NORMAL',['../da/d98/sketch_8ino.html#a5d74787dedbc4e11c1ab15bf487e61f8a50d1448013c6f17125caee18aa418af7',1,'sketch.ino']]]
 ];

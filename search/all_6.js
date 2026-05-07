@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['isrbuttonhigh_0',['isrButtonHigh',['../da/d98/sketch_8ino.html#a081afc79c40d483f2124ebee42f4e345',1,'sketch.ino']]],
-  ['isrbuttonreset_1',['isrButtonReset',['../da/d98/sketch_8ino.html#ab6c6045c14f1ca2dd7dcbf93ec25b5a5',1,'sketch.ino']]],
-  ['isvalidwakeup_2',['isValidWakeup',['../dc/d3c/main_8ino.html#af11da7223b6a37bcef6a06e131afd1d5',1,'main.ino']]],
-  ['izvjestaj_2emd_3',['izvjestaj.md',['../d2/d71/izvjestaj_8md.html',1,'']]],
-  ['izvještaj_20—_20rus_20lab2_3a_20pametni_20poštanski_20sandučić_4',['Izvještaj — RUS Lab2: Pametni poštanski sandučić',['../d5/d27/md_Lab2_docs_izvjestaj.html',1,'']]]
+  ['handleinterrupts_0',['handleInterrupts',['../da/d98/sketch_8ino.html#ac5c5aa6ac9677fce5ac2020e921bd47b',1,'sketch.ino']]],
+  ['highflag_1',['highFlag',['../da/d98/sketch_8ino.html#ae93004ff527434835723143d2cb3da0a',1,'sketch.ino']]],
+  ['hijerarhija_20prioriteta_2',['Hijerarhija prioriteta',['..//home/runner/work/RUS--Bosnjak/RUS--Bosnjak/Lab1/sketch.ino#prioriteti',1,'']]],
+  ['hijerarhija_20prioriteta_20prekida_3',['Hijerarhija prioriteta prekida',['../index.html#autotoc_md6',1,'']]]
 ];

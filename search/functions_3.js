@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['isrbuttonhigh_0',['isrButtonHigh',['../da/d98/sketch_8ino.html#a081afc79c40d483f2124ebee42f4e345',1,'sketch.ino']]],
-  ['isrbuttonreset_1',['isrButtonReset',['../da/d98/sketch_8ino.html#ab6c6045c14f1ca2dd7dcbf93ec25b5a5',1,'sketch.ino']]],
-  ['isvalidwakeup_2',['isValidWakeup',['../dc/d3c/main_8ino.html#af11da7223b6a37bcef6a06e131afd1d5',1,'main.ino']]]
+  ['readdistance_0',['readDistance',['../da/d98/sketch_8ino.html#a69d510fb986ae8fef84b3dbb732e799e',1,'sketch.ino']]]
 ];
