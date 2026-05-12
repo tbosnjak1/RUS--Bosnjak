@@ -185,4 +185,4 @@ analizu preporučuje se rad na hardverskoj platformi s mjeračem struje.
 | Buđenje | Vanjski prekid EXT0 na GPIO 32 |
 | Čuvanje stanja | RTC memorija (`RTC_DATA_ATTR`) |
 | Debouncing | Vremensko ignoriranje (300ms) |
-| Wokwi link | (https://wokwi.com/projects/463348291726456833) |
+| Wokwi link | (https://wokwi.com/projects/463721164653718529) |
