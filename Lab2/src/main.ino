@@ -1,14 +1,4 @@
-/**
- * @file main.ino
- * @brief RUS Lab2 - Pametni poštanski sandučić (Event-driven Deep Sleep)
- *
- * Sustav je većinu vremena u Deep Sleep modu.
- * Budi se isključivo kada se pritisne tipkalo (vanjski prekid na GPIO 32).
- * Nakon buđenja evidentira događaj, izvršava kratku obradu i vraća se u sleep.
- * Koristi RTC memoriju za čuvanje broja događaja kroz sleep cikluse.
- * Debouncing je implementiran vremenskim ignoriranjem ponovljenih prekida.
- *
- */
+
 
 #include "esp_sleep.h"
 #include "WiFi.h"
