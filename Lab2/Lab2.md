@@ -4,7 +4,7 @@
 > **Autor:** Bosnjak  
 > **Platforma:** ESP32 (Wokwi simulator)  
 > **Varijanta:** A — Pametni poštanski sandučić  
-> **Simulacija:** (https://wokwi.com/projects/463348291726456833)
+> **Simulacija:** (https://wokwi.com/projects/463721164653718529)
 
 ---
 
