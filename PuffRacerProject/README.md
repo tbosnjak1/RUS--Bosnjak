@@ -1,4 +1,4 @@
-# PuffRacer – Spirometar za kontrolu trkačeg auta
+# PuffRacer – Spirometar za kontrolu trkaćeg auta
 
 ## Opis projekta
 
