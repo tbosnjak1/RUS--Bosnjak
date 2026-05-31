@@ -1,0 +1,10 @@
+[wokwi]
+version = 1
+firmware = "main.ino"
+chip = "esp32"
+
+[[library]]
+name = "Adafruit SSD1306"
+
+[[library]]
+name = "Adafruit GFX Library"
