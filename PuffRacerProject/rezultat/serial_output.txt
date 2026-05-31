@@ -1,0 +1,49 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+=== PuffRacer F1 ===
+[NVS] Učitan rekord: 0.00
+Okreni potenciometar za početak!
+[START] Vježba započeta!
+[FLOW] 644 ml/s
+[FLOW] 820 ml/s
+[FLOW] 822 ml/s
+[FLOW] 891 ml/s
+[FLOW] 895 ml/s
+[FLOW] 895 ml/s
+[FLOW] 930 ml/s
+[FLOW] 958 ml/s
+[FLOW] 958 ml/s
+[FLOW] 958 ml/s
+[FLOW] 958 ml/s
+[NVS] Spremljen novi rekord: 959.00
+[USPJEH] Vježba uspješno završena!
+[RESET] Novi pokušaj...
+[START] Vježba započeta!
+[FLOW] 958 ml/s
+[FLOW] 972 ml/s
+[KAZNA] Prebrzo! Vježba poništena.
+[RESET] Pokušaj ponovo.
+[START] Vježba započeta!
+[FLOW] 1209 ml/s
+[KAZNA] Prebrzo! Vježba poništena.
+[RESET] Pokušaj ponovo.
+[START] Vježba započeta!
+[FLOW] 1148 ml/s
+[FLOW] 1063 ml/s
+[FLOW] 1063 ml/s
+[FLOW] 1063 ml/s
+[FLOW] 1063 ml/s
+[FLOW] 1063 ml/s
+[NVS] Spremljen novi rekord: 1063.00
+[USPJEH] Vježba uspješno završena!
+[RESET] Novi pokušaj...
+[START] Vježba započeta!
+[FLOW] 162 ml/s
+[FLOW] 32 ml/s
