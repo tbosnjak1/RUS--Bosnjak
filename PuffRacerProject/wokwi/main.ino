@@ -3,18 +3,15 @@
 #include <Adafruit_SSD1306.h>
 #include <Preferences.h>
 
-
 #define POT_PIN     34   ///< Potenciometar - simulacija puhanja
 #define LED_GREEN   26   ///< Zelena LED - razina 1 (600 ml/s)
 #define LED_YELLOW  27   ///< Žuta LED - razina 2 (900 ml/s)
 #define LED_RED     25   ///< Crvena LED - razina 3 (1200 ml/s)
 
-
 #define SCREEN_WIDTH  128
 #define SCREEN_HEIGHT 64
 #define OLED_RESET    -1
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
-
 
 #define FLOW_MIN      0      ///< Minimalni protok (ml/s)
 #define FLOW_MAX      1400   ///< Maksimalni protok (ml/s)
@@ -25,22 +22,19 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 #define EMA_ALPHA     0.2    ///< Koeficijent EMA filtriranja (0-1)
 #define SAMPLE_MS     50     ///< Interval uzorkovanja (ms)
 
-
 enum State { IDLE, RUNNING, SUCCESS, PENALTY };
 State currentState = IDLE;
 
+float emaFlow        = 0;   ///< EMA filtrirani protok
+float currentFlow    = 0;   ///< Trenutni protok (ml/s)
+float bestResult     = 0;   ///< Najbolji rezultat
 
-float emaFlow       = 0;        ///< EMA filtrirani protok
-float currentFlow   = 0;        ///< Trenutni protok (ml/s)
-float bestResult    = 0;        ///< Najbolji rezultat
 unsigned long successStart = 0; ///< Početak uspješne zone
 unsigned long successTime  = 0; ///< Akumulirano uspješno vrijeme
 unsigned long lastSample   = 0; ///< Timestamp zadnjeg uzorkovanja
-bool exerciseActive = false;    ///< Je li vježba aktivna
+unsigned long penaltyStart = 0; ///< Početak penalty stanja
 
-Preferences prefs; ///< NVS memorija
-─
-
+Preferences prefs; 
 
 float readFlow() {
   int raw = analogRead(POT_PIN);
@@ -48,7 +42,6 @@ float readFlow() {
   emaFlow = EMA_ALPHA * flow + (1 - EMA_ALPHA) * emaFlow;
   return emaFlow;
 }
-
 
 void updateLEDs(float flow) {
   digitalWrite(LED_GREEN,  flow >= THRESHOLD_1 ? HIGH : LOW);
@@ -64,14 +57,12 @@ void saveBestResult(float result) {
   Serial.println(result);
 }
 
-
 float loadBestResult() {
   prefs.begin("puffracer", true);
   float best = prefs.getFloat("best", 0);
   prefs.end();
   return best;
 }
-
 
 void drawDisplay(float flow, float timeLeft) {
   display.clearDisplay();
@@ -156,7 +147,7 @@ void loop() {
   switch (currentState) {
 
     case IDLE:
-      successTime = 0;
+      successTime  = 0;
       successStart = 0;
       if (currentFlow > THRESHOLD_1) {
         currentState = RUNNING;
@@ -172,11 +163,11 @@ void loop() {
         Serial.print((int)currentFlow);
         Serial.println(" ml/s");
       }
-    }
 
       if (currentFlow >= THRESHOLD_3) {
         currentState = PENALTY;
-        successTime = 0;
+        penaltyStart = now;
+        successTime  = 0;
         Serial.println("[KAZNA] Prebrzo! Vježba poništena.");
         break;
       }
@@ -195,9 +186,10 @@ void loop() {
         }
       } else {
         successStart = 0;
-        successTime = 0;
+        successTime  = 0;
       }
       break;
+    }
 
     case SUCCESS:
       if (now - successStart > 3000) {
@@ -207,9 +199,12 @@ void loop() {
       break;
 
     case PENALTY:
-      delay(2000);
-      currentState = IDLE;
-      Serial.println("[RESET] Pokušaj ponovo.");
+      if (penaltyStart == 0) penaltyStart = now;
+      if (now - penaltyStart >= 2000) {
+        penaltyStart = 0;
+        currentState = IDLE;
+        Serial.println("[RESET] Pokušaj ponovo.");
+      }
       break;
   }
 
