@@ -22,13 +22,13 @@ jobs:
         run: cd Lab1 && doxygen Doxyfile
 
       - name: Generiraj PuffRacer dokumentaciju
-        run: cd PuffRacer && doxygen Doxyfile
+        run: cd PuffRacerProject && doxygen Doxyfile
 
       - name: Spoji dokumentaciju
         run: |
           mkdir -p combined_docs
           cp -r Lab1/docs/html combined_docs/Lab1
-          cp -r PuffRacer/docs/doxygen/html combined_docs/PuffRacer
+          cp -r PuffRacerProject/docs/doxygen/html combined_docs/PuffRacer
           cat > combined_docs/index.html << 'EOF'
           <!DOCTYPE html>
           <html>
