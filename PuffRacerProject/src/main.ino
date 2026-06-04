@@ -3,38 +3,38 @@
 #include <Adafruit_SSD1306.h>
 #include <Preferences.h>
 
-#define POT_PIN     34   ///< Potenciometar - simulacija puhanja
-#define LED_GREEN   26   ///< Zelena LED - razina 1 (600 ml/s)
-#define LED_YELLOW  27   ///< Žuta LED - razina 2 (900 ml/s)
-#define LED_RED     25   ///< Crvena LED - razina 3 (1200 ml/s)
+#define POT_PIN     34   
+#define LED_GREEN   26   
+#define LED_YELLOW  27  
+#define LED_RED     25  
 
 #define SCREEN_WIDTH  128
 #define SCREEN_HEIGHT 64
 #define OLED_RESET    -1
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-#define FLOW_MIN      0      ///< Minimalni protok (ml/s)
-#define FLOW_MAX      1400   ///< Maksimalni protok (ml/s)
-#define THRESHOLD_1   600    ///< Prag razine 1 (ml/s)
-#define THRESHOLD_2   900    ///< Prag razine 2 (ml/s)
-#define THRESHOLD_3   1200   ///< Prag razine 3 - KAZNA (ml/s)
-#define SUCCESS_TIME  5000   ///< Trajanje uspješne vježbe (ms)
-#define EMA_ALPHA     0.2    ///< Koeficijent EMA filtriranja (0-1)
-#define SAMPLE_MS     50     ///< Interval uzorkovanja (ms)
+#define FLOW_MIN      0      
+#define FLOW_MAX      1400   
+#define THRESHOLD_1   600   
+#define THRESHOLD_2   900    
+#define THRESHOLD_3   1200  
+#define SUCCESS_TIME  5000   
+#define EMA_ALPHA     0.2    
+#define SAMPLE_MS     50    
 
 enum State { IDLE, RUNNING, SUCCESS, PENALTY };
 State currentState = IDLE;
 
-float emaFlow        = 0;   ///< EMA filtrirani protok
-float currentFlow    = 0;   ///< Trenutni protok (ml/s)
-float bestResult     = 0;   ///< Najbolji rezultat
+float emaFlow        = 0;  
+float currentFlow    = 0;   
+float bestResult     = 0; 
 
-unsigned long successStart = 0; ///< Početak uspješne zone
-unsigned long successTime  = 0; ///< Akumulirano uspješno vrijeme
-unsigned long lastSample   = 0; ///< Timestamp zadnjeg uzorkovanja
-unsigned long penaltyStart = 0; ///< Početak penalty stanja
+unsigned long successStart = 0;
+unsigned long successTime  = 0;
+unsigned long lastSample   = 0; 
+unsigned long penaltyStart = 0;
 
-Preferences prefs; ///< NVS memorija
+Preferences prefs;
 
 float readFlow() {
   int raw = analogRead(POT_PIN);
