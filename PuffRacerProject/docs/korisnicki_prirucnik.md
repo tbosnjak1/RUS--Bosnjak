@@ -54,13 +54,17 @@ OLED prikazuje **">> POBJEDA! <<"** 🏆
 ---
 
 ## OLED zaslon
-┌─────────────────────────┐
-│ PuffRacer F1            │
-│ Protok: 950 ml/s        │
-│ ████████░░░░ [bar]      │
-│ Vrijeme: 3.2s           │
-│ Rekord: 1050 ml/s       │
-└─────────────────────────┘
+**Primjer prikaza:**
+
+| Redak | Sadržaj |
+|-------|---------|
+| 1 | PuffRacer F1 |
+| 2 | Protok: 950 ml/s |
+| 3 | Bar indikator s pragovima |
+| 4 | Vrijeme: 3.2s |
+| 5 | Rekord: 1050 ml/s |
+
+
 | Element | Opis |
 |---------|------|
 | Protok | Trenutni izmjereni protok u ml/s |
