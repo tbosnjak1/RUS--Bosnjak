@@ -101,9 +101,9 @@ koristi u rehabilitaciji pluća. Pacijenti moraju udisati stabilno
 i kontrolirano — presnažan udah uzrokuje turbulenciju i nije
 terapeutski koristan. Naš F1 scenarij to preslikava u:
 
-- **Premalo goriva** = presporo puhanje
-- **Optimalan protok** = savršen pit-stop
-- **Prolijevanje goriva** = prebrzo puhanje → KAZNA
+- **Bolid se sporo kreće** = presporo puhanje
+- **Bolid radi savršen krug** = optimalno puhanje
+- **Bolid se prebrzo kreće (izljetanje sa staze)** = prebrzo puhanje → KAZNA
 
 ---
 
